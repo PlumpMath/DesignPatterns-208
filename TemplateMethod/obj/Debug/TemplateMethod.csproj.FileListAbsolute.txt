@@ -1,0 +1,5 @@
+C:\Projects\MyProjects\DesignPatterns\TemplateMethod\bin\Debug\TemplateMethod.exe.config
+C:\Projects\MyProjects\DesignPatterns\TemplateMethod\bin\Debug\TemplateMethod.exe
+C:\Projects\MyProjects\DesignPatterns\TemplateMethod\bin\Debug\TemplateMethod.pdb
+C:\Projects\MyProjects\DesignPatterns\TemplateMethod\obj\Debug\TemplateMethod.exe
+C:\Projects\MyProjects\DesignPatterns\TemplateMethod\obj\Debug\TemplateMethod.pdb

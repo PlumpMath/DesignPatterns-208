@@ -1,0 +1,2 @@
+C:\Projects\MyProjects\DesignPatterns\DesignPatterns\bin\Debug\DesignPatterns.exe.config
+C:\Projects\MyProjects\DesignPatterns\DesignPatterns\obj\Debug\DesignPatterns.csprojResolveAssemblyReference.cache

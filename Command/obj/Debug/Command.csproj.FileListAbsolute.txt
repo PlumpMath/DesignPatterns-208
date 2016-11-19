@@ -1,0 +1,6 @@
+C:\Projects\MyProjects\DesignPatterns\Command\bin\Debug\Command.exe.config
+C:\Projects\MyProjects\DesignPatterns\Command\bin\Debug\Command.exe
+C:\Projects\MyProjects\DesignPatterns\Command\bin\Debug\Command.pdb
+C:\Projects\MyProjects\DesignPatterns\Command\obj\Debug\Command.csprojResolveAssemblyReference.cache
+C:\Projects\MyProjects\DesignPatterns\Command\obj\Debug\Command.exe
+C:\Projects\MyProjects\DesignPatterns\Command\obj\Debug\Command.pdb

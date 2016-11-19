@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{403A1829-849C-4656-9AB2-70B2842002FC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Factory</RootNamespace>
+    <AssemblyName>Factory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PizzaIngredients\IngredientFactories\NYPizzaIngredientFactory.cs" />
+    <Compile Include="PizzaIngredients\IngredientsInterfaces\ICheese.cs" />
+    <Compile Include="PizzaIngredients\IngredientsInterfaces\IClams.cs" />
+    <Compile Include="PizzaIngredients\IngredientsInterfaces\IDough.cs" />
+    <Compile Include="PizzaIngredients\IngredientsInterfaces\IPepperoni.cs" />
+    <Compile Include="PizzaIngredients\IngredientsInterfaces\ISauce.cs" />
+    <Compile Include="PizzaIngredients\IngredientsInterfaces\IVeggies.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\FreshClams.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\FrozenClams.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\Garlic.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\MarinaroSauce.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\MozzarellaCheesse.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\Mushroom.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\Onion.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\RedPepper.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\SlicedPepperoni.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\PlimTomatoSauce.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\ReggianoCheese.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\ThickCrustDough.cs" />
+    <Compile Include="PizzaIngredients\Ingredients\ThinCrustDough.cs" />
+    <Compile Include="PizzaIngredients\IPizzaIngredientFactory.cs" />
+    <Compile Include="PizzasStyle\Pizza.cs" />
+    <Compile Include="PizzasStyle\ConcretePizza\CheesePizza.cs" />
+    <Compile Include="PizzasStyle\ConcretePizza\ClamPizza.cs" />
+    <Compile Include="PizzasStyle\ConcretePizza\PepperoniPizza.cs" />
+    <Compile Include="PizzaStories\ChicagoPizzaStory.cs" />
+    <Compile Include="PizzaStories\NYPizzaStory.cs" />
+    <Compile Include="PizzasStyle\ConcretePizza\VerggiePizza.cs" />
+    <Compile Include="PizzaStories\PizzaStory.cs" />
+    <Compile Include="PizzasStyle\PizzaType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Description.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
